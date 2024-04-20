@@ -2,12 +2,6 @@ CREATE DATABASE dbEstoque
 GO
 
 USE dbEstoque
-DROP TABLE tblCliente
-DROP TABLE tblVendas
-DROP TABLE tblItensVenda
-DROP TABLE tblProduto
-DROP TABLE tblFornecedor
-DROP TABLE tblFabricante
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
