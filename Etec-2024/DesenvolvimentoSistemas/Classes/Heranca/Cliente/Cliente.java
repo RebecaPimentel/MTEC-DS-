@@ -30,11 +30,10 @@ public class Cliente {
 
     public void calculaDesconto() {
         double desconto = valor_pedido * 0.1;
-        double valorComDesconto = valor_pedido - desconto;
+        double valorDesconto = valor_pedido - desconto;
         System.out.println(nome + " tem direito a um desconto de 10%: R$" + desconto);
-        System.out.println("Valor do pedido com desconto: R$" + valorComDesconto);
+        System.out.println("Valor do pedido com desconto: R$" + valorDesconto);
     }
 }
-
 
 
