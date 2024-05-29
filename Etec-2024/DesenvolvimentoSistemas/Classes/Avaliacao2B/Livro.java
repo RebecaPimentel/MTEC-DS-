@@ -38,10 +38,10 @@ public class Livro extends Publicacao {
 	public void exibirDetalhes(boolean incluirE) {
         if (incluirE) {
             System.out.println("Título: " + geTitulo() + ", Autor: " + getAutor() + ", Ano de Publicação: " + getAnoPublicacao() +
-                    ", \n Editora: " + editora + ", Número de páginas: " + numPaginas);
+                    ", \n Editora: " + editora + ", Número de páginas: " + numPaginas + "\n");
         } else {
             System.out.println("Título: " + geTitulo() + ", Autor: " + getAutor() + ", Ano de Publicação: " + getAnoPublicacao() +
-                    ", \n Número de páginas: " + numPaginas);
+                    ", \n Número de páginas: " + numPaginas + "\n");
         }
     }
 	
