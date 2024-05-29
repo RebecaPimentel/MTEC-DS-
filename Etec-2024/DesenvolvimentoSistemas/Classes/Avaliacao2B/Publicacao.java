@@ -45,7 +45,7 @@ public class Publicacao {
 	// Método
 	 
 	 public void exibirDetalhes() {
-	        System.out.println("Titulo:  " + titulo + "  Autor:  " + autor + "  Data de publicação:  " + anoPublicacao);
+	        System.out.println("Titulo:  " + titulo + "  Autor:  " + autor + "  Data de publicação:  " + anoPublicacao + "\n");
 	    }
 }
 
