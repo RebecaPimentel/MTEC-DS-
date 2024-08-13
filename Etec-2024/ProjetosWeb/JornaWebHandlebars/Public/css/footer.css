@@ -1,0 +1,470 @@
+.footer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: #eceaea;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+    gap: 50px;
+    flex-wrap: wrap;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px 0px 50px 0px;
+    border-top: #444444 2px solid;
+    margin-top: 30px;
+        
+}
+.footer {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background: #eceaea;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-end;
+    gap: 50px;
+    flex-wrap: wrap;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 50px 0px 50px 0px;
+    border-top: #444444 2px solid;
+    margin-top: 30px;
+        
+}
+
+.footer .logo{
+    display: flex;
+    height: 248px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #EF1400;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-left: 50px;
+}
+
+.footer .logo img{
+    width: 248px;
+}
+
+/* Bloco Paginas*/
+
+.footer .paginas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .paginas .titulo {
+     display: flex;
+     width: 107px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     
+}
+
+.footer .paginas .titulo h1{
+     width: 107px;
+     color: #b20000;
+     font-size: 27px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: normal;
+}
+
+.footer .paginas .line{
+     width: 107px;
+     height: 4px;
+     background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+.footer .paginas nav{
+    display: flex;
+    width: 105px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.footer .paginas nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    
+}
+
+/* Bloco Desenvolvedores*/
+
+.footer .desenvolvedores nav{
+    display: flex;
+    width: 233px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+.footer .desenvolvedores nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer .desenvolvedores{
+    display: flex;
+    height: 248px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .desenvolvedores .titulo {
+    display: flex;
+    width: 233px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .desenvolvedores .titulo h1{
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer .desenvolvedores .line{
+    width: 230px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+/* Bloco Orientador*/
+
+.footer .orientador nav{
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+.footer .orientador nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer .orientador{
+    display: flex;
+    height: 248px;
+    width: 146px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .orientador .titulo {
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .orientador .titulo h1{
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer .orientador .line{
+    width: 146px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+/* Bloco Redes-Sociais*/
+
+
+.footer .redes-sociais {
+    display: flex;
+    width: 255.5;
+    height: 248px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .redes-sociais .titulo .line {
+    width: 255px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+.footer .redes-sociais .titulo {
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .redes-sociais .titulo h1 {
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.footer .redes-sociais .redes {
+    display: flex;
+    height: 233px;
+    gap: 18px;
+}
+
+.footer .logo{
+    display: flex;
+    height: 248px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #EF1400;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    padding-left: 50px;
+}
+
+.footer .logo img{
+    width: 248px;
+}
+
+/* Bloco Paginas*/
+
+.footer .paginas{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .paginas .titulo {
+     display: flex;
+     width: 107px;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     
+}
+
+.footer .paginas .titulo h1{
+     width: 107px;
+     color: #b20000;
+     font-size: 27px;
+     font-style: normal;
+     font-weight: 800;
+     line-height: normal;
+}
+
+.footer .paginas .line{
+     width: 107px;
+     height: 4px;
+     background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+.footer .paginas nav{
+    display: flex;
+    width: 105px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.footer .paginas nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+    
+}
+
+/* Bloco Desenvolvedores*/
+
+.footer .desenvolvedores nav{
+    display: flex;
+    width: 233px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+.footer .desenvolvedores nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer .desenvolvedores{
+    display: flex;
+    height: 248px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .desenvolvedores .titulo {
+    display: flex;
+    width: 233px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .desenvolvedores .titulo h1{
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer .desenvolvedores .line{
+    width: 230px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+/* Bloco Orientador*/
+
+.footer .orientador nav{
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+
+.footer .orientador nav a{
+    color: #505050;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.footer .orientador{
+    display: flex;
+    height: 248px;
+    width: 146px;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .orientador .titulo {
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .orientador .titulo h1{
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.footer .orientador .line{
+    width: 146px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+/* Bloco Redes-Sociais*/
+
+
+.footer .redes-sociais {
+    display: flex;
+    width: 255.5;
+    height: 248px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 30px;
+    padding-left: 50px;
+}
+
+.footer .redes-sociais .titulo .line {
+    width: 255px;
+    height: 5px;
+    background: linear-gradient(270deg, #FC1212 23.36%, #C5221F 102.34%);
+}
+
+.footer .redes-sociais .titulo {
+    display: flex;
+    width: 146px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer .redes-sociais .titulo h1 {
+    color: #b20000;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+
+}
+
+.footer .redes-sociais .redes {
+    display: flex;
+    height: 233px;
+    gap: 18px;
+}

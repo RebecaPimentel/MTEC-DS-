@@ -1,0 +1,39 @@
+.apresentacao {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao .featurette-image{
+  border-radius: 30px;
+}
+
+
+#caracteristica-icon i {
+  font-size: 50px;
+  background-color: #b20000;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width:600px){
+
+  
+}
+
+@media (max-width:400px){
+
+}
+
+.list-unstyled li {
+display:flex;
+padding: 5px !important;
+}
+

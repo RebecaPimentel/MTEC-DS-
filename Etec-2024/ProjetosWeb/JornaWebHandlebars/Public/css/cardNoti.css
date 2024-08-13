@@ -1,0 +1,130 @@
+.cardNoti {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: antiquewhite;
+    padding-bottom: 50px;
+}
+
+.cardNoti .caixasTes {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.cardNoti .caixasTes .caixa {
+    position: relative;
+    height: 470px;
+    width: 340px;
+    display: block;
+    background: white;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.15);
+    transition: 0.4s linear;
+    color: black;
+    overflow: hidden;
+}
+
+.cardNoti .caixasTes .caixa:hover {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cardNoti .caixasTes .caixa .image {
+    background: rgb(0, 0, 0);
+    height: 100%;
+    overflow: hidden;
+}
+
+.cardNoti .caixasTes .caixa .image img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.cardNoti .caixasTes .caixa:hover .image img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 20px 30px;
+    transition: 0.4s;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .tituloBox,
+.cardNoti .caixasTes .caixa .conteudoBox .subTituBox {
+    transition: opacity 0.4s;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .botaoBox {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.cardNoti .caixasTes .caixa:hover .conteudoBox .botaoBox {
+    display: block;
+    opacity: 1;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .tituloBox {
+    font-size: 24px;
+    font-weight: 600;
+    color: #131313;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .subTituBox {
+    font-size: 18px;
+    font-weight: 500;
+    color: #b20000;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .botaoBox p {
+    color: #666;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .botaoBox button {
+    float: left;
+    padding: 7px;
+    font-size: 17px;
+    background: #b20000;
+    color: aliceblue;
+    font-weight: 500;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+
+.cardNoti .caixasTes .caixa .conteudoBox .botaoBox button:hover {
+    transform: scale(0.9);
+    background: #d10404;
+}
+
+.cardNoti .caixasTes .caixa:hover .conteudoBox .tituloBox,
+.cardNoti .caixasTes .caixa:hover .conteudoBox .subTituBox {
+    opacity: 1;
+}
+
+@media (max-width:600px) {
+    .cardNoti .caixasTes {
+        gap: 3px;
+    }
+    .cardNoti .caixasTes .caixa {
+        transform: scale(0.7);
+    }
+}

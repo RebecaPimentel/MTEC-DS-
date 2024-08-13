@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    margin: 80px 10px 10px;
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: #a70202;
+}
+
+.carousel-control-prev {
+    background-color: #ce9d1600;
+    border: #ce9d1600 2px solid;
+}
+
+.carousel-control-next {
+    background-color: #ce9d1600;
+    border: #ce9d1600 2px solid;
+}
+
+.carousel-control-prev-icon {
+    font-size: 220px;
+    width: 220px;
+}
+
+.explicacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: -10rem;
+    gap: 20px;
+}
+
+
+.explicacao .cartoes {
+    width: 250px;
+    height: 390px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px;
+    perspective: 2500px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.explicacao .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explicacao .whapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.explicacao .whapper img {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.explicacao .cartoes:hover .whapper {
+    transform:perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.explicacao .whapper::before, .whapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    
+}
+
+.explicacao .whapper::before {
+    top: 0;
+    height: 100%;
+    
+}
+
+.explicacao .whapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(to bottom, transparent 46%, rgba(12,13,19,0.5) 68%, (12,13,19) 97%);
+}
+
+.explicacao .cartoes:hover .whapper::before, .whapper::after {
+    opacity: 1;
+}
+
+.explicacao .cartoes:hover .whapper::after {
+    height: 120px;
+}
+
+.explicacao .logo {
+    width: 100%;
+    transition: transform 0.5s;
+    position: absolute;
+    bottom: 10px;
+    color: #ce9d16;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 2s ease;
+}
+
+
+.explicacao .cartoes:hover .cover-image {
+    opacity: 0.3;
+}
+
+.explicacao .character {
+    width: 150px;
+    opacity: 0;
+    transition: all 0.5s;
+    filter: drop-shadow(2px 2px 2px #000);
+    position: absolute;
+    z-index: -1;
+}
+
+.explicacao #mapa {
+    width: 250px;
+}
+
+.explicacao .cartoes:hover .character {
+    opacity: 1;
+    transform: translate3d(5%,-20%, 670px);
+}
