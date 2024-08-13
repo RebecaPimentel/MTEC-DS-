@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/apresentacao.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/comeco.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/cardNoti.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="logo">
+            <img src="./imgs//cps.png">
+        </div>
+        <div class="navs">
+            <a href="http://localhost:3000/">
+                <div class="icons">  
+                    <h3>Inicio</h3>
+                </div>
+            </a>
+            
+            <a href="http://localhost:3000/cps">
+                <div class="icons">
+                    <h3>CPS</h3>
+                </div>
+            </a>
+
+            <a href="http://localhost:3000/dtsComemorativas">
+                <div class="icons">
+                    <h3>Datas</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/eventosCulturais">
+                <div class="icons">
+                    <h3>Eventos</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/paginaFofoca">
+                <div class="icons">
+                    <h3>Fofokinha</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/curso">
+              <div class="icons">
+                  <h3>Curso</h3>
+              </div>
+          </a>
+        </div>
+        <div class="pesquisa">
+            <input type="text" class="barra-texto" placeholder="Pesquisar">
+            <a href="#">
+                <img src="./imgs/pesquisa.png">
+            </a>
+        </div>
+        <div class="botaoHambur">
+            <img src="./imgs/menu.png" alt="">
+        </div>
+    </section>
+    <div class="menuResp ">
+      <div class="navs">
+            <a href="http://localhost:3000/">
+                <div class="icons">  
+                    <h3>Inicio</h3>
+                </div>
+            </a>
+            
+            <a href="http://localhost:3000/cps">
+                <div class="icons">
+                    <h3>CPS</h3>
+                </div>
+            </a>
+
+            <a href="http://localhost:3000/dtsComemorativas">
+                <div class="icons">
+                    <h3>Datas</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/eventosCulturais">
+                <div class="icons">
+                    <h3>Eventos</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/paginaFofoca">
+                <div class="icons">
+                    <h3>Fofokinha</h3>
+                </div>
+            </a>
+            <a href="http://localhost:3000/curso">
+              <div class="icons">
+                  <h3>Curso</h3>
+              </div>
+          </a>
+            <a href="#" >
+                <div class="icons" id="espeNav">
+                    <h3 class="espeNav">Outro</h3>
+                </div>
+            </a>
+        </div>
+        <div class="pesquisa">
+            <input type="text" class="barra-texto" placeholder="Pesquisar">
+        </div>
+        
+    </div> 
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/capa1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/capa2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/capa3.jpg " class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/capa4.jpg " class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"></span>
+        </button>
+      </div>
+
+
+
+    <div class="explicacao">
+        <div class="cartoes">
+            <div class="whapper">
+                <img src="./imgs/imgCps/logoCps.png" class="cover-image">
+            </div>
+            <div class="logo">
+                <h1>CPS</h1>
+            </div>
+            <img src="./imgs/cps.png" class="character" id="mapa">
+        </div>
+        <div class="cartoes">
+            <div class="whapper">
+                <img src="./imgs/imgDtsC/logoFestaJunina.png" class="cover-image">
+            </div>
+            <div class="logo">
+                <h1>Datas</h1>
+            </div>
+            <img src="./imgs/calendario.png" class="character" id="mapa">
+        </div>
+        <div class="cartoes">
+            <div class="whapper">
+                <img src="./imgs/imgEventosC/eventosLogo.png" class="cover-image">
+            </div>
+            <div class="logo">
+                <h1>Eventos</h1>
+            </div>
+            <img src="./imgs/cps.png" class="character" id="mapa">
+        </div>
+        <div class="cartoes">
+            <div class="whapper">
+                <img src="./imgs/imgFofocas/fofokinha.png" class="cover-image">
+            </div>
+            <div class="logo">
+                <h1>Fofokinha</h1>
+            </div>
+            <img src="./imgs/cps.png" class="character" id="mapa">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1 class="heading">
+      O <span>Centro Paula Sousa</span> tem muito  a oferecer.
+  </h1>
+    <div class="apresentacao">
+      
+      <div class="row featurette">
+        <div class="col-md-5 order-md-1">
+          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" src="./imgs/apresImg.jpg" data-holder-rendered="true" style="width: 500px; height: auto; ">
+        </div>
+        <div class="col-md-7 order-md-1" style="display: flex; align-items: center; justify-content: center;">
+          <div class="row mb-3 text-center">
+            <div class="container text-center">
+              <div class="row " id="caracteristica-icon">
+                <div class="col-6 col-sm-6">
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                      <i class="bi bi-gear-fill"></i>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Formação Técnica</h4>
+                    <p class="text-body-secondary">Cursos técnicos de qualidade, preparando os alunos para o mercado de trabalho com habilidades práticas e teóricas.</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                      <i class="bi bi-cpu-fill"></i>
+                        <use xlink:href="#table"></use>
+                      </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Educação Tecnológica</h4>
+                    <p class="text-body-secondary">Cursos superiores de tecnologia, capacitando os alunos com conhecimento especializado para suas carreiras.</p>
+                  </div>
+                </div>
+                <div class="w-100"></div>
+            
+                <div class="col-6 col-sm-6">
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                      <i class="bi bi-building-fill"></i>
+                        <use xlink:href="#table"></use>
+                      </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Parcerias Empresariais</h4>
+                    <p class="text-body-secondary">Facilitando estágios e programas de aprendizado prático para os alunos.</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6">
+                  <div class="col d-flex flex-column gap-2">
+                    <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                      <i class="bi bi-person-lines-fill"></i>
+                        <use xlink:href="#table"></use>
+                      </svg>
+                    </div>
+                    <h4 class="fw-semibold mb-0 text-body-emphasis">Desenvolvimento Profissional</h4>
+                    <p class="text-body-secondary">Mantendo os alunos e profissionais atualizados com as novas tendências do mercado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <h1 class="heading">
+      As <span>Ultimas Noticias</span> do dia.
+  </h1>
+
+    <div class="cardNoti">
+      <div class="caixasTes">
+        <div class="caixa">
+          <div class="image">
+            <img src="./imgs/Github .png" alt="">
+          </div>
+          <div class="conteudoBox">
+            <div class="tituloBox">O que é Centro Paula Souza?</div>
+            <div class="subTituBox">Noticias</div>
+            <div class="botaoBox">
+              <P>O Centro Paula Souza oferece formação técnica de qualidade, preparando os alunos para o mercado de trabalho com cursos especializados em diversas áreas. </P>
+              <a href="http://localhost:3000/cps"><button>Leia Mais</button></a>
+            </div>
+          </div>
+        </div>
+       <div class="caixa">
+        <div class="image">
+          <img src="./imgs/imgDtsC/junina1.jpg" alt="">
+        </div>
+        <div class="conteudoBox">
+          <div class="tituloBox">Festa Junina</div>
+          <div class="subTituBox">Noticias</div>
+          <div class="botaoBox">
+            <P>A festa junina é uma das celebrações mais tradicionais e populares do Brasil, realizada...</P>
+            <a href="http://localhost:3000/dtsComemorativas"><button>Leia Mais</button></a>
+          </div>
+        </div>
+       </div>
+       <div class="caixa">
+        <div class="image">
+          <img src="./imgs/imgEventosC/parada4.jpg" alt="">
+        </div>
+        <div class="conteudoBox">
+          <div class="tituloBox">A Parada do Orgulho LGBT como um direito cultural </div>
+          <div class="subTituBox">Noticias</div>
+          <div class="botaoBox">
+            <P>A Constituição Federal de 1988 ampliou o conceito de cultura, albergando o patrimônio material e...</P>
+            <a href="http://localhost:3000/eventosCulturais"><button>Leia Mais</button></a>
+          </div>
+        </div>
+       </div>
+       <div class="caixa">
+        <div class="image">
+          <img src="./imgs/imgFofocas/fofoca4.png" alt="">
+        </div>
+        <div class="conteudoBox">
+          <div class="tituloBox">Terremoto no mundo das celebridades!</div>
+          <div class="subTituBox">Noticias</div>
+          <div class="botaoBox">
+            <P>Prepare-se para um verdadeiro terremoto no mundo das celebridades!...</P>
+            <a href="http://localhost:3000/paginaFofoca"><button>Leia Mais</button></a>
+          </div>
+        </div>
+       </div>
+       <div class="caixa">
+        <div class="image">
+          <img src="./imgs/imgsCursos/curso1.jpg" alt="">
+        </div>
+        <div class="conteudoBox">
+          <div class="tituloBox">Cursos Etec</div>
+          <div class="subTituBox">Noticias</div>
+          <div class="botaoBox">
+            <P>As 228 Etecs administradas pelo Centro Paula Souza contam com mais de 226 mil matriculados...</P>
+            <a href="http://localhost:3000/curso"><button>Leia Mais</button></a>
+          </div>
+        </div>
+       </div>
+      </div>
+       
+    </div>
+
+    <section class="footer">
+      <div class="logo">
+        <img src="./imgs/cps.png">
+      </div>
+      <div class="paginas">
+          <div class="titulo">
+              <h1>Paginas</h1>
+              <snap class="line"></snap>
+          </div>
+          <nav>
+              <a href="http://localhost:3000/">Início</a>
+              <a href="http://localhost:3000/cps">Cps</a>
+              <a href="http://localhost:3000/dtsComemorativas">Datas</a>
+              <a href="http://localhost:3000/eventosCulturais">Eventos</a>
+              <a href="http://localhost:3000/paginaFofoca">Fofokinha</a>
+          </nav>
+      </div>
+      <div class="desenvolvedores">
+          <div class="titulo">
+              <h1>Desenvolvedores</h1>
+              <snap class="line"></snap>
+          </div>
+          <nav>
+              <a href="">Barbara Samira</a>
+              <a href="">Rebeca Pimentel</a>
+          </nav>
+      </div>
+      <div class="orientador">
+          <div class="titulo">
+              <h1>Orientador</h1>
+              <snap class="line"></snap>
+          </div>
+          <nav>
+              <a href="">Everson Bacelli</a>
+          </nav>
+      </div>
+      <div class="redes-sociais">
+          <div class="titulo">
+              <h1>Siga - nos</h1>
+              <snap class="line"></snap>
+          </div>
+          <div class="redes">
+              <a> <img src="./imgs/skill-icons_instagram.png" alt=""></a>
+              <a> <img src="./imgs/devicon_facebook.png" alt=""></a>
+              <a> <img src="./imgs/skill-icons_twitter.png" alt=""></a>
+              <a> <img src="./imgs/logos_google-gmail.png" alt=""></a>
+          </div>
+      </div>
+  </section>
+
+    <script>
+      const botaoHambur = document.querySelector('.botaoHambur')
+        const baixarmenu = document.querySelector('.menuResp')
+        botaoHambur.onclick = function () {
+            baixarmenu.classList.toggle('open')
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
