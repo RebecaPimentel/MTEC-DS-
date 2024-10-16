@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0a192f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border: 2px solid #1f3a55;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #0e243a, #122b45);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 300px;
+}
+
+.input-area {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numero-lados {
+    font-size: 2rem;
+    background-color: #0d1b2a;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: #38b6ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-top: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #38b6ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1f78b4;
+}
+
+.imagem-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-forma {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #38b6ff;
+    border-radius: 10px;
+}
