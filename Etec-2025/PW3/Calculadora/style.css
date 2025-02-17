@@ -61,6 +61,7 @@ body{
     background-color: #72d9f8;
     color: rgb(2, 1, 48);
     transition: .5s;
+    box-shadow:  3px 3px #027086;
 }
 
 #zero{
