@@ -3,42 +3,72 @@
     padding: 0;
 }
 
-html {
+body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
+    background-image: url(fundoCalc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-}
 
-.borda {
+.calculadora {
+    background-color: #96E5F4;
     padding: 25px;
-    background-color: blueviolet;
+    width: 350px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 15px #027086;
+    
 }
+
+.display{
+    width: 100%; 
+    box-sizing: border-box;  
+    border: none;
+    height: 80px;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background-color: #027086;
+}
+
+.box-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
 
 .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
+    border: none;
+    height: 60px;
+    border-radius: 16px;
     font-size: larger;
+    background-color: #1FACC8;
+    color: #DCDCDC;
+    font-weight: 500;
 }
+
+.button:hover{
+    cursor: pointer;
+    background-color: #72d9f8;
+    color: rgb(2, 1, 48);
+    transition: .5s;
+}
+
+#zero{
+    grid-column: 1/3;
+}
+
 .delete {
     width: 25px;
 }
 
-#zero {
-    width: 100px;
-}
 
-.visor input{
-    width: 100%;    
-    border: none;
-    height: 50px;
-    margin-bottom: 10px;
-}
