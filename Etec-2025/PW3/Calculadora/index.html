@@ -8,27 +8,27 @@
 </head>
 <body>
     <div class="calculadora">
-        <input type="text" class="display" id="n" >
+        <input type="text" class="display" id="visor"  >
         <div class="box-buttons">
-            <button class="button" id="delete"><img class="delete" src="excluir.png" alt=""></i></button>
-            <button class="button" id="apagarTd">C</button>
-            <button class="button" id="porc">%</button>
-            <button class="button" id="div">/</button>
-            <button class="button" id="sete">7</button>
-            <button class="button" id="oito">8</button>
-            <button class="button" id="nove">9</button>
-            <button class="button" id="mult">X</button>
-            <button class="button" id="quatro">4</button>
-            <button class="button" id="cinco">5</button>
-            <button class="button" id="seis">6</button>
-            <button class="button" id="sub">-</button>
-            <button class="button" id="um">1</button>
-            <button class="button" id="dois">2</button>
-            <button class="button" id="tres">3</button>
-            <button class="button" id="ad">+</button>
-            <button class="button" id="zero">0</button>
-            <button class="button" id="ponto">.</button>
-            <button class="button" id="resul">=</button>
+            <button class="button" id="delete" onclick="del()"><img class="delete" src="excluir.png" alt=""></button>
+            <button class="button" id="apagarTd" onclick="apagarTudo()">C</button>
+            <button class="button" id="digitos" onclick="ad(this)">%</button>
+            <button class="button" id="digitos" onclick="ad(this)">/</button>
+            <button class="button" id="digitos" onclick="ad(this)">7</button>
+            <button class="button" id="digitos" onclick="ad(this)">8</button>
+            <button class="button" id="digitos" onclick="ad(this)">9</button>
+            <button class="button" id="digitos" onclick="ad(this)">*</button>
+            <button class="button" id="digitos" onclick="ad(this)">4</button>
+            <button class="button" id="digitos" onclick="ad(this)">5</button>
+            <button class="button" id="digitos" onclick="ad(this)">6</button>
+            <button class="button" id="digitos" onclick="ad(this)">-</button>
+            <button class="button" id="digitos" onclick="ad(this)">1</button>
+            <button class="button" id="digitos" onclick="ad(this)">2</button>
+            <button class="button" id="digitos" onclick="ad(this)">3</button>
+            <button class="button" id="digitos" onclick="ad(this)">+</button>
+            <button class="button" id="zero" onclick="zero()">0</button>
+            <button class="button" id="digitos" onclick="ad(this)">.</button>
+            <button class="button" id="resul" onclick="resul()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
