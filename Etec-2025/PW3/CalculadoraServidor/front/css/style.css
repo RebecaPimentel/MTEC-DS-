@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(fundoCalc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.calculadora {
+    background-color: #96E5F4;
+    padding: 25px;
+    width: 350px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 15px 15px 15px #027086;
+    
+}
+
+.display{
+    width: 100%; 
+    box-sizing: border-box;  
+    border: none;
+    height: 80px;
+    text-align: right;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border-radius: 14px;
+    background-color: #027086; 
+    color: aliceblue; 
+    padding: 12px;
+    font-size: 40px;
+}
+
+.box-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+
+.button{
+    border: none;
+    height: 60px;
+    border-radius: 16px;
+    font-size: larger;
+    background-color: #1FACC8;
+    color: #DCDCDC;
+    font-weight: 500;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #72d9f8;
+    color: rgb(2, 1, 48);
+    transition: .5s;
+    box-shadow:  3px 3px #027086;
+}
+
+#zero{
+    grid-column: 1/3;
+}
+
+.delete {
+    width: 25px;
+}
