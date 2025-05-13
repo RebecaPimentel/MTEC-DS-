@@ -44,7 +44,7 @@ app.post('/calc', (req, res)=>{
     }
     if (button === "digitos"){
         resul = funtions.ad(resul, digito);
-    }
+    } 
     
     
     const retorno = {resul}
