@@ -1,0 +1,133 @@
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.tabelas {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px; 
+    align-items: start;
+    background-image: url(../img/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+
+
+.quadrante {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.classes{
+    color: aliceblue;
+    width: 80%;
+    text-align: left;
+    font-family: monospace;
+}
+/*
+table{
+    width: 80%;
+    background-color: azure;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+tbody th{
+    border-top: solid 1px rgb(59, 59, 59);
+}
+
+td{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+*/
+
+table {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.904); 
+    font-family: monospace;
+    font-weight: bold;
+    border-collapse: collapse; 
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2); /* Sombra suave */
+    border-radius: 2px; 
+    overflow: hidden; /* Faz a borda arredondada funcionar */
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #d3d2d2; /* Linhas separando */
+}
+
+
+th {
+    background-color: #003366; /* Azul escuro */
+    color: white;
+    font-size: 1rem;
+}
+
+tr:hover {
+    background-color: #fffefe; /* Efeito hover */
+}
+
+/* Primeira coluna (posição) em destaque */
+td:first-child {
+    font-weight: bold;
+    background-color: #0033662c;
+}
+
+/* Imagens dentro da tabela */
+td img {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tituloPrim{
+    color: aliceblue;
+    font-family: 'Karantina';
+    font-size: 60px;
+    
+}
+
+.tituloTab{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tituloTab i {
+    color: #fffefe;
+    font-size: 30px;
+}
+
+.tituloTab i:hover {
+    font-size: 35px;
+    transition: 0.5s ease;
+}
+
+.tituloTab i:active {
+    color: #48DAA0;
+}
