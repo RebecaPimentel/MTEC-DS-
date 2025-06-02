@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"href="map.png">
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <img src="map.png" alt="">
+            <h1>Buscar o CEP</h1>
+        </div>
+
+        <form onsubmit="consultaCEP(event)">
+            <div class="caixa" id="cepum">
+                <label for="cep">CEP:</label><br>
+                <input type="text" placeholder="Insira seu CEP" name="cep" id="cep" autofocus required>
+            </div>
+            <div class="caixa">
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" name="logradouro" id="logradouro" >
+            </div>
+            <div class="caixa">
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" id="bairro" >
+            </div>
+            <div class="caixa">
+                <label for="localidade">Localidade:</label>
+                <input type="text" name="localidade" id="localidade" >
+            </div>
+            <div class="caixa">
+                <label for="uf">UF:</label>
+                <input type="text" name="uf" id="uf" >
+            </div>
+            <br><br>
+            
+            <button type="submit" onclick="consultaCEP()">Buscar</button><br>
+        </form>
+    </div>
+
+    <script>
+        function consultaCEP(event) {
+    event.preventDefault(); // agora o "event" existe!
+
+    let cep = document.getElementById('cep').value.trim();
+
+    if (!/^\d{8}$/.test(cep)) {
+        alert("Digite um CEP válido com 8 números.");
+        return;
+    }
+
+    let url = 'https://viacep.com.br/ws/' + cep + '/json/';
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.erro) {
+                alert("CEP não encontrado.");
+                return;
+            }
+
+            document.getElementById('logradouro').value = data.logradouro || '';
+            document.getElementById('bairro').value = data.bairro || '';
+            document.getElementById('localidade').value = data.localidade || '';
+            document.getElementById('uf').value = data.uf || '';
+        })
+        .catch(error => {
+            console.error(error);
+            alert("Erro ao buscar o CEP.");
+        });
+    }
+    </script>
+    
+</body>
+</html>
